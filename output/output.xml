@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on darwin)" generated="20220728 10:16:09.525" rpa="false" schemaversion="3">
+<suite id="s1" name="Tc2" source="/Users/apple/Documents/Python/auto_test_mobile/testcase/tc2.robot">
+<test id="s1-t1" name="Tab LIVE" line="39">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>automationName=${ANDROID_AUTOMATION_NAME}</arg>
+<arg>devicesName=${UUID}</arg>
+<arg>platformName=${ANDROID_PLATFORM_NAME}</arg>
+<arg>platformVersion=${ANDROID_PLATFORM_VERSION}</arg>
+<arg>app=${ANDROID_APP}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220728 10:16:09.778" endtime="20220728 10:16:20.965"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${Header Overall}</arg>
+<arg>30s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220728 10:16:20.965" endtime="20220728 10:16:27.378"/>
+</kw>
+<kw name="Scroll" library="AppiumLibrary">
+<arg>${Header Overall}</arg>
+<arg>${Header LIVE}</arg>
+<doc>Scrolls from one element to another
+Key attributes for arbitrary elements are `id` and `name`. See
+`introduction` for details about locating elements.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220728 10:16:32.509" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220728 10:16:30.789" endtime="20220728 10:16:32.509"/>
+</kw>
+<msg timestamp="20220728 10:16:32.509" level="FAIL">ValueError: Element locator '//android.widget.LinearLayout[@elementId="00000000-0000-0cd8-ffff-ffff0000015b"]' did not match any elements.</msg>
+<status status="FAIL" starttime="20220728 10:16:27.378" endtime="20220728 10:16:32.512"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 10:16:32.513" endtime="20220728 10:16:32.513"/>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<arg>${Header LIVE}</arg>
+<doc>Tap element identified by ``locator``. </doc>
+<status status="NOT RUN" starttime="20220728 10:16:32.513" endtime="20220728 10:16:32.513"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220728 10:16:32.513" endtime="20220728 10:16:32.513"/>
+</kw>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="NOT RUN" starttime="20220728 10:16:32.513" endtime="20220728 10:16:32.513"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="NOT RUN" starttime="20220728 10:16:32.513" endtime="20220728 10:16:32.513"/>
+</kw>
+<status status="FAIL" starttime="20220728 10:16:09.778" endtime="20220728 10:16:32.514">ValueError: Element locator '//android.widget.LinearLayout[@elementId="00000000-0000-0cd8-ffff-ffff0000015b"]' did not match any elements.</status>
+</test>
+<status status="FAIL" starttime="20220728 10:16:09.526" endtime="20220728 10:16:32.514"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tc2">Tc2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
